@@ -18,3 +18,5 @@ def validateLoginSession():
             return False ''' Failed session validation '''
     else:
         return False ''' Failed session validation '''
+
+''' If use is already logged in and trying to access /login then redirect them to /index '''
