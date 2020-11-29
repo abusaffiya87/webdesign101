@@ -1,5 +1,5 @@
 ''' Generate session for valid login '''
-def createSession(ip, u, p): ''' 2 unknown pieces of information added suhc as IP and password '''
+def createSession(ip, u, p): ''' 2 unknown pieces of information added such as IP and password '''
     cst = digits
     rd = ''.join(random.choice(cst) for i in range(4))
     sk = md5(str.encode(ip) + str.encode(u) + str.encode(p) + str.encode(rd)).hexdigest()
